@@ -1,5 +1,36 @@
 #  Analyse du Crowdfunding Ulule - Documentation Complète
 
+Instructions pour Exécuter le Projet
+Prérequis
+
+Python 3.8 ou version supérieure
+Pip (gestionnaire de packages Python)
+
+Étapes d'Installation et d'Exécution
+1. Créez l'environnement virtuel
+bashpython3 -m venv env
+source env/bin/activate  # Sur Windows: env\Scripts\activate
+2. Installez les dépendances
+bashpip install -r requirements.txt
+3. Lancez les scripts dans cet ordre
+bashpython code/processing.py
+python code/analysis.py
+streamlit run code/main.py
+ Structure du Projet
+projet_ulule/
+├── code/
+│   ├── processing.py
+│   ├── analysis.py
+│   ├── main.py
+│   └── ...
+├── images/
+│   ├── distributions_generales.png
+│   ├── comparaison_categories.png
+│   └── ...
+├── requirements.txt
+└── README.md
+
+
 ##  Introduction
 
 Cette étude propose une analyse data-driven des déterminants du succès des campagnes de crowdfunding sur Ulule, plateforme française leader. En combinant techniques avancées de web scraping, traitement statistique rigoureux et modèles prédictifs, ce projet identifie les leviers actionnables qui maximisent les chances de réussite selon les typologies de projets.
