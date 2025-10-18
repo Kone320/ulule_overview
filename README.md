@@ -1,34 +1,68 @@
 #  Analyse du Crowdfunding Ulule - Documentation Complète
 
-Instructions pour Exécuter le Projet
-Prérequis
 
-Python 3.8 ou version supérieure
-Pip (gestionnaire de packages Python)
 
-Étapes d'Installation et d'Exécution
-1. Créez l'environnement virtuel
-bashpython3 -m venv env
+````markdown
+## Instructions pour Exécuter le Projet
+
+### Prérequis
+- Python 3.8 ou version supérieure
+- Pip (gestionnaire de packages Python)
+
+---
+
+### Étapes d'Installation et d'Exécution
+
+1. **Créez l'environnement virtuel**
+
+```bash
+python3 -m venv env
 source env/bin/activate  # Sur Windows: env\Scripts\activate
-2. Installez les dépendances
-bashpip install -r requirements.txt
-3. Lancez les scripts dans cet ordre
-bashpython code/processing.py
+````
+
+2. **Installez les dépendances**
+
+```bash
+pip install -r requirements.txt
+```
+
+3. **Lancez les scripts dans cet ordre**
+
+```bash
+python code/processing.py
 python code/analysis.py
 streamlit run code/main.py
- Structure du Projet
+```
+
+>  Astuce : tous les graphiques générés seront automatiquement sauvegardés dans `demo/images/`.
+
+---
+
+###  Structure du Projet
+
+```
 projet_ulule/
 ├── code/
 │   ├── processing.py
 │   ├── analysis.py
 │   ├── main.py
-│   └── ...
-├── images/
-│   ├── distributions_generales.png
-│   ├── comparaison_categories.png
-│   └── ...
+│   └── scraping.py
+├── data/
+│   ├── raw-data.csv
+│   └── processed-data.csv
+├── demo/
+│   ├── images/
+│   │   ├── distributions_generales.png
+│   │   ├── comparaison_categories.png
+│   │   └── ...
+│   └── videos/
 ├── requirements.txt
 └── README.md
+```
+
+---
+
+
 
 
 ##  Introduction
