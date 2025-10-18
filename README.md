@@ -192,7 +192,7 @@ feature_cols = [
     - **Objectif** : Comparaison modèles économiques
     - **Insight** : Préventes plus performantes avec engagement accru
 
-### 🤖 Graphiques de Modélisation
+###  Graphiques de Modélisation
 
 11. **reglog.png**
     ![Régression Logistique](images/reglog.png)
