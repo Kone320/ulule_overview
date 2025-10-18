@@ -1,6 +1,6 @@
-# 📊 Analyse du Crowdfunding Ulule - Documentation Complète
+#  Analyse du Crowdfunding Ulule - Documentation Complète
 
-## 🎯 Introduction
+##  Introduction
 
 Cette étude propose une analyse data-driven des déterminants du succès des campagnes de crowdfunding sur Ulule, plateforme française leader. En combinant techniques avancées de web scraping, traitement statistique rigoureux et modèles prédictifs, ce projet identifie les leviers actionnables qui maximisent les chances de réussite selon les typologies de projets.
 
@@ -8,7 +8,7 @@ Cette étude propose une analyse data-driven des déterminants du succès des ca
 
 ---
 
-## 🎪 Justification des 4 Catégories Sélectionnées
+##  Justification des 4 Catégories Sélectionnées
 
 Le choix des catégories s'appuie sur une segmentation stratégique du marché du crowdfunding :
 
@@ -21,7 +21,7 @@ Cette sélection permet d'étudier des dynamiques de financement contrastées : 
 
 ---
 
-## 🧪 Hypothèses et Intuitions à Vérifier
+##  Hypothèses et Intuitions à Vérifier
 
 ### Hypothèses Principales
 1. **Performance différentielle** : Les projets créatifs surpassent les projets technologiques en taux de succès
@@ -32,9 +32,9 @@ Cette sélection permet d'étudier des dynamiques de financement contrastées : 
 
 ---
 
-## 🏗️ Architecture Technique du Projet
+##  Architecture Technique du Projet
 
-### 1. 📡 `scraping.py` - Collecte des Données
+### 1.  `scraping.py` - Collecte des Données
 
 #### Défi Technique : Site à Balises Dynamiques
 Ulule présente une particularité technique majeure : **l'instabilité des sélecteurs CSS** entre les différentes versions du site. Cette "dérive des balises" nécessite une approche de scraping robuste avec multiples fallbacks.
@@ -68,7 +68,7 @@ UluleScraper (Classe de base)
 
 ---
 
-### 2. 🧹 `processing.py` - Prétraitement des Données
+### 2.  `processing.py` - Prétraitement des Données
 
 #### Pipeline de Nettoyage
 ```
@@ -90,7 +90,7 @@ Données brutes → Validation → Normalisation → Enrichissement
 
 ---
 
-### 3. 📊 `analysis.py` - Analyse Exploratoire
+### 3. `analysis.py` - Analyse Exploratoire
 
 #### Statistiques Descriptives Avancées
 
@@ -112,7 +112,7 @@ Données brutes → Validation → Normalisation → Enrichissement
 
 ---
 
-### 4. 🤖 `ml.py` - Modélisation Prédictive
+### 4.  `ml.py` - Modélisation Prédictive
 
 #### Feature Engineering
 
@@ -138,64 +138,75 @@ feature_cols = [
 
 ---
 
-## 📈 Graphiques Générés
+##  Graphiques Générés
 
-### 📊 Graphiques d'Analyse Exploratoire
+###  Graphiques d'Analyse Exploratoire
 
 1. **distributions_generales.png**
+   ![Distributions Générales](images/distributions_generales.png)
    - **Objectif** : Visualiser les distributions des variables principales
    - **Insight** : Distributions très asymétriques, nécessité de transformations
 
-2. **winsorisation.png**
+3. **winsorisation.png**
+   ![Winsorisation](images/winsorisation.png)
    - **Objectif** : Comparer distributions avant/après transformation
    - **Insight** : Réduction efficace de l'asymétrie par winsorisation + log
 
-3. **comparaison_categories.png**
+5. **comparaison_categories.png**
+   ![Comparaison Catégories](images/comparaison_categories.png)
    - **Objectif** : Analyser les différences inter-catégories
    - **Insight** : Artisanat & Cuisine et Mode & Design plus performants
 
-4. **wordclouds_categories.png**
+7. **wordclouds_categories.png**
+   ![Wordclouds Catégories](images/wordclouds_categories.png)
    - **Objectif** : Analyse lexicale différentielle
    - **Insight** : Thématiques distinctives par catégorie
 
-5. **analyse_geographique.png**
+9. **analyse_geographique.png**
    ![Analyse Géographique](images/analyse_geographique.png)
    - **Objectif** : Identifier clusters urbains et performance
    - **Insight** : Concentration dans grandes villes, effet d'agglomération
 
-7. **analyse_texte.png**
+10. **analyse_texte.png**
+    ![Analyse Texte](images/analyse_texte.png)
    - **Objectif** : Impact longueur titres sur succès
    - **Insight** : Titres plus courts pour projets réussis
 
-8. **matrice_correlation.png**
+11. **matrice_correlation.png**
+    ![Matrice Corrélation](images/matrice_correlation.png)
    - **Objectif** : Interactions entre variables
    - **Insight** : Forte liaison contributions-commentaires
 
-9. **pair_plot_analysis.png**
+11. **pair_plot_analysis.png**
+    ![Pair Plot Analysis](images/pair_plot_analysis.png)
    - **Objectif** : Analyse multivariée
    - **Insight** : Relations complexes entre variables clés
 
-10. **pca.png**
+11. **pca.png**
+    ![PCA](images/pca.png)
    - **Objectif** : Réduction dimensionnelle
    - **Insight** : Axes engagement collectif vs communication visuelle
 
 11. **dons_vs_prevents_standardized.png**
+    ![Dons vs Préventes](images/dons_vs_prevents_standardized.png)
     - **Objectif** : Comparaison modèles économiques
     - **Insight** : Préventes plus performantes avec engagement accru
 
 ### 🤖 Graphiques de Modélisation
 
 11. **reglog.png**
+    ![Régression Logistique](images/reglog.png)
     - **Objectif** : Performance modèle régression logistique
     - **Insight** : Bonne détection succès, difficulté sur échecs
 
-12. **rdf.png**
+13. **rdf.png**
+    ![Random Forest](images/rdf.png)
     - **Objectif** : Importance variables Random Forest
     - **Insight** : Contributions et commentaires comme variables principales
 
 ---
 
-## 🔍 Interprétations des Résultats
+##  Interprétations des Résultats
 
 ### Dynamiques Catégorielles
 
@@ -222,7 +233,7 @@ Logiques de communication et d'engagement distinctes.
 
 ---
 
-## 🎯 Implications Stratégiques
+##  Implications Stratégiques
 
 ### Pour les Porteurs de Projet
 
@@ -238,7 +249,7 @@ Logiques de communication et d'engagement distinctes.
 
 ---
 
-## 🚀 Perspectives
+##  Perspectives
 
 - Analyse sémantique des descriptions
 - Modélisation temporelle des campagnes
@@ -247,6 +258,6 @@ Logiques de communication et d'engagement distinctes.
 
 ---
 
-## 💡 Conclusion
+##  Conclusion
 
 L'approche méthodologique développée - combinant robustesse technique du scraping et sophistication analytique - constitue un framework réutilisable pour l'analyse d'autres écosystèmes de financement participatif.
