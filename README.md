@@ -159,26 +159,27 @@ feature_cols = [
    - **Insight** : Thématiques distinctives par catégorie
 
 5. **analyse_geographique.png**
+   image/analyse_geographique.png
    - **Objectif** : Identifier clusters urbains et performance
    - **Insight** : Concentration dans grandes villes, effet d'agglomération
 
-6. **analyse_texte.png**
+7. **analyse_texte.png**
    - **Objectif** : Impact longueur titres sur succès
    - **Insight** : Titres plus courts pour projets réussis
 
-7. **matrice_correlation.png**
+8. **matrice_correlation.png**
    - **Objectif** : Interactions entre variables
    - **Insight** : Forte liaison contributions-commentaires
 
-8. **pair_plot_analysis.png**
+9. **pair_plot_analysis.png**
    - **Objectif** : Analyse multivariée
    - **Insight** : Relations complexes entre variables clés
 
-9. **pca.png**
+10. **pca.png**
    - **Objectif** : Réduction dimensionnelle
    - **Insight** : Axes engagement collectif vs communication visuelle
 
-10. **dons_vs_prevents_standardized.png**
+11. **dons_vs_prevents_standardized.png**
     - **Objectif** : Comparaison modèles économiques
     - **Insight** : Préventes plus performantes avec engagement accru
 
