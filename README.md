@@ -6,7 +6,7 @@
 ## Instructions pour Exécuter le Projet
 
 ### Prérequis
-- Python 3.8 ou version supérieure
+- Python 3.10 
 - Pip (gestionnaire de packages Python)
 
 ---
