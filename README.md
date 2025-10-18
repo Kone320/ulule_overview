@@ -159,7 +159,7 @@ feature_cols = [
    - **Insight** : Thématiques distinctives par catégorie
 
 5. **analyse_geographique.png**
-   image/analyse_geographique.png
+   ![5](demo/image/analyse_geographique.png)
    - **Objectif** : Identifier clusters urbains et performance
    - **Insight** : Concentration dans grandes villes, effet d'agglomération
 
