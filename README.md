@@ -2,7 +2,7 @@
 
 
 
-````markdown
+
 ## Instructions pour Exécuter le Projet
 
 ### Prérequis
